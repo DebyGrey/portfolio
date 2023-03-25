@@ -61,6 +61,7 @@ nav {
   gap: 20px;
   box-sizing: border-box;
   padding: 112px 24px;
+  border-bottom-left-radius: 15%;
 }
 
 /* Primary Text */
@@ -107,11 +108,15 @@ nav {
 }
 
 /* social media icons */
-.social-icons {
+.social-icons ul {
   display: flex;
   gap: 20px;
   justify-content: flex-start;
   align-items: baseline;
+}
+.social-icons ul li {
+  text-decoration: none;
+  list-style-type: none;
 }
 
 /* Media Query for Desktop Sceen */
@@ -121,6 +126,7 @@ nav {
     background-color: #fff;
     width: 100%;
     height: 92px;
+    align-items: center;
   }
 
   .menu-container {
@@ -166,12 +172,14 @@ nav {
     background: #fff;
     box-sizing: border-box;
     padding: 0;
+    border-bottom-left-radius: 15%;
   }
 
   .header-bg {
     position: absolute;
-    width: 100%;
-    height: 721px;
+    width: 97%;
+    left: 34.6px;
+    height: 705px;
     top: 26px;
     background-image: url(./images/Headerbg@2x.png);
     background-color: #fff;
