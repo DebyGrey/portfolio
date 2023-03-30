@@ -508,7 +508,7 @@ header {
     grid-template-columns: 1fr 1fr;
     top: 3350px;
     grid-gap: 22px;
-    padding: 5%;
+    padding: 10%;
   }
 
   /* language list */
