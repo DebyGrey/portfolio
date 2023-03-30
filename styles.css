@@ -285,6 +285,7 @@ header {
   height: 100%;
   border-radius: 8px;
   margin: auto;
+  object-fit: contain;
 }
 
 /* Right block */
@@ -329,7 +330,7 @@ header {
   gap: 24px;
   position: absolute;
   width: 100%;
-  top: 3600px;
+  top: 3506px;
   background-color: #fff;
   border-top-right-radius: 15%;
 }
@@ -491,7 +492,7 @@ header {
 
   .work-card {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     grid-gap: 22px;
     width: 80%;
   }
@@ -502,13 +503,18 @@ header {
     gap: 24px;
   }
 
+  .switch-grids .grid-item-1 {
+    grid-area: 1/2;
+  }
+
   /* About me section */
   .about-me-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     top: 3350px;
     grid-gap: 22px;
-    padding: 5%;
+    padding: 10% 5%;
+    height: 924px;
   }
 
   /* language list */
