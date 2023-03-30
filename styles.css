@@ -339,6 +339,8 @@ header {
 /* About me Bottom Section */
 .skill-set-card {
   width: 100%;
+
+  /* border: 1px solid blue; */
 }
 
 /* skill sets */
@@ -514,10 +516,10 @@ header {
   /* language list */
   .language-list {
     display: flex;
+    row-gap: 12px;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    row-gap: 12px;
   }
 
   .language-list li {
