@@ -265,8 +265,6 @@ header {
   display: flex;
   flex-direction: column;
   gap: 88px;
-
-  /* border: 1px solid red; */
 }
 
 /* Work Card */
@@ -339,8 +337,6 @@ header {
 /* About me Bottom Section */
 .skill-set-card {
   width: 100%;
-
-  /* border: 1px solid blue; */
 }
 
 /* skill sets */
@@ -511,6 +507,8 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     top: 3350px;
+    grid-gap: 22px;
+    padding: 5%;
   }
 
   /* language list */
