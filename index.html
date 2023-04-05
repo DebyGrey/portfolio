@@ -228,7 +228,7 @@
           </div>
         </div>
         <div class="work-card flex-column switch-grids">
-           <div class="grid-item-1">
+          <div class="grid-item-1">
             <img
               class="portfolio-snapshot"
               src="./images/snapshot-4.png"
@@ -358,6 +358,58 @@
             <img src="./images/open-arrow.png" alt="open-arrow" />
           </div>
         </div>
+      </section>
+
+      <!-- Contact form -->
+      <section class="contact-form-section flex-column">
+        <div class="contact-form-bg"></div>
+        <article class="flex-column">
+          <h3 class="text-40 color-white text-align-center">Contact me</h3>
+          <p class="text-20-LH-28 color-B50 text-align-center">
+            If you have an application you are interested in developing, a
+            feature that you need built or a project that needs coding. I’d love
+            to help with it!
+          </p>
+        </article>
+        <article>
+          <form
+            class="form-div flex-column"
+            action="https://formspree.io/f/xoqzkzzr"
+            method="post"
+          >
+            <input
+              class="text-input color-N800 text-17-LH-20"
+              name="username"
+              id="username"
+              type="text"
+              maxlength="30"
+              placeholder="Lorem Ipsum"
+              required
+            />
+            <input
+              class="email-input color-N800 text-17-LH-20"
+              name="Email"
+              id="email"
+              type="email"
+              maxlength="30"
+              placeholder="loremipsum@gmail.com"
+              required
+            />
+            <textarea
+              class="textarea-input color-N60 text-15-bold"
+              name="message"
+              id="message"
+              type="textarea"
+              placeholder="write a new message here..."
+              maxlength="500"
+              rows="5"
+              required
+            ></textarea>
+            <button class="submit-btn text-17" type="submit">
+              Get in touch
+            </button>
+          </form>
+        </article>
       </section>
     </main>
   </body>

@@ -27,6 +27,7 @@ body {
   border-radius: 8px;
   background-color: #fff;
   color: #6070ff;
+  width: fit-content;
 }
 
 /* Button on Hover */
@@ -69,6 +70,11 @@ body {
   border-bottom: 1px solid #dfe1e6;
 }
 
+/* Text alignmnent */
+.text-align-center {
+  text-align: center;
+}
+
 /* Primary Text */
 .primary-text {
   width: 95%;
@@ -76,6 +82,10 @@ body {
 }
 
 /* colors theme */
+.color-white {
+  color: #fff;
+}
+
 .color-N800 {
   color: #172b4d;
 }
@@ -92,6 +102,10 @@ body {
   color: #7a869a;
 }
 
+.color-N50 {
+  color: #b3bac5;
+}
+
 .color-N40 {
   color: #dfe1e6;
 }
@@ -106,6 +120,10 @@ body {
 
 .color-B300 {
   color: #7f8cff;
+}
+
+.color-B50 {
+  color: #ebebff;
 }
 
 .color-Black {
@@ -179,6 +197,15 @@ body {
   letter-spacing: 0.03em;
 }
 
+.text-17-LH-20 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+}
+
 .text-18 {
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -193,6 +220,14 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
+}
+
+.text-20-LH-28 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
 }
 
 .text-32 {
@@ -261,6 +296,7 @@ header {
   position: absolute;
   top: 718px;
   width: 100%;
+  height: 50%;
   padding: 114px 24px;
   display: flex;
   flex-direction: column;
@@ -332,7 +368,8 @@ header {
   width: 100%;
   top: 3506px;
   background-color: #fff;
-  border-top-right-radius: 15%;
+  border-top-right-radius: 100px;
+  height: 1206px;
 }
 
 /* About me Bottom Section */
@@ -384,6 +421,48 @@ header {
 .social-icons ul li {
   text-decoration: none;
   list-style-type: none;
+}
+
+/* Contact Form */
+.contact-form-section {
+  padding: 114px 24px;
+  gap: 52px;
+  position: absolute;
+  width: 100%;
+  top: 4621px;
+  border-top-left-radius: 100px;
+  background-color: #6070ff;
+}
+
+.form-div {
+  gap: 20px;
+}
+
+.text-input,
+.email-input {
+  height: 48px;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  padding-left: 16px;
+}
+
+.textarea-input {
+  height: 170px;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  padding: 15px 38px 15px 16px;
+}
+
+.contact-form-bg {
+  background-image: url(./images/contact-form-bg.png);
+  object-fit: contain;
+  position: absolute;
+  top: 3.8%;
+  left: 40%;
+  height: 83%;
+  width: 60%;
 }
 
 /* Media query for mobile phone screen */
