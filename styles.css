@@ -368,7 +368,8 @@ header {
   width: 100%;
   top: 3506px;
   background-color: #fff;
-  border-top-right-radius: 15%;
+  border-top-right-radius: 100px;
+  height: 1206px;
 }
 
 /* About me Bottom Section */
@@ -428,8 +429,8 @@ header {
   gap: 52px;
   position: absolute;
   width: 100%;
-  top: 4469px;
-  border-top-left-radius: 15%;
+  top: 4621px;
+  border-top-left-radius: 100px;
   background-color: #6070ff;
 }
 
