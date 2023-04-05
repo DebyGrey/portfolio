@@ -614,4 +614,48 @@ header {
     display: flex;
     flex-direction: column;
   }
+
+  /* Contact Form */
+  .contact-form-section {
+    padding: 10% 30%;
+    gap: 52px;
+    height: 846px;
+    top: 4160px;
+  }
+
+  .form-div {
+    gap: 27px;
+    margin: auto;
+  }
+
+  .text-input,
+  .email-input {
+    height: 48px;
+    background: #fff;
+    border: 1px solid #cfd8dc;
+    border-radius: 2px;
+    padding-left: 16px;
+  }
+
+  .textarea-input {
+    height: 170px;
+    background: #fff;
+    border: 1px solid #cfd8dc;
+    border-radius: 2px;
+    padding: 15px 38px 15px 16px;
+  }
+
+  .contact-form-bg {
+    background-image: url(./images/contact-form-bg@2x.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    object-fit: scale-down;
+    left: 2.5%;
+    height: 95%;
+    width: 95%;
+  }
+
+  .submit-btn {
+    margin: auto;
+  }
 }
