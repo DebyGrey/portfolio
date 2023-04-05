@@ -590,9 +590,9 @@ header {
   .about-me-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    top: 3350px;
+    top: 3150px;
     grid-gap: 22px;
-    padding: 10% 5%;
+    padding: 5% 5%;
     height: 924px;
   }
 
@@ -620,7 +620,7 @@ header {
     padding: 10% 30%;
     gap: 52px;
     height: 846px;
-    top: 4160px;
+    top: 4000px;
   }
 
   .form-div {
