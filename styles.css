@@ -465,6 +465,7 @@ header {
   .headline article {
     position: absolute;
     padding: 16% 16%;
+
     /* z-index: 5; */
   }
 
@@ -497,7 +498,7 @@ header {
     background: #fff;
     border-bottom-left-radius: 100px;
     padding: 0;
-     background-image: url(./images/Headerbg@2x.png);
+    background-image: url(./images/Headerbg@2x.png);
     background-color: #fff;
     background-size: contain;
     background-repeat: no-repeat;
