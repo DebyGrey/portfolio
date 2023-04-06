@@ -638,31 +638,37 @@ header {
   }
 
   /* Animations and transitions for desktop */
- 
+
   /* Snapshoot Portfolio */
-.portfolio-snapshot {
-  transition: all 0.5s ease-in-out;
-}
-.portfolio-snapshot:hover{
-  transform: scale(1.1);
-}
-.contact-form-section article p{
-  transition: all 0.5s ease-in-out;
-}
-.contact-form-section article p:hover{
-  transition: all 0.5s ease-in-out;
-  transform: translate(20px);
-}
-/* My logo */
-.my-logo {
-  animation: rotateLogo 0.5s  linear;
-}
-@keyframes rotateLogo {
-  from {
-    transform: rotate(0deg);
+  .portfolio-snapshot {
+    transition: all 0.5s ease-in-out;
   }
-  to {
-    transform: rotate(360deg);
+
+  .portfolio-snapshot:hover {
+    transform: scale(1.1);
   }
-}
+
+  .contact-form-section article p {
+    transition: all 0.5s ease-in-out;
+  }
+
+  .contact-form-section article p:hover {
+    transition: all 0.5s ease-in-out;
+    transform: translate(20px);
+  }
+
+  /* My logo */
+  .my-logo {
+    animation: rotateLogo 0.5s  linear;
+  }
+
+  @keyframes rotateLogo {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
 }
