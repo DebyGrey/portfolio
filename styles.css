@@ -465,7 +465,7 @@ header {
   .headline article {
     position: absolute;
     padding: 16% 16%;
-    z-index: 5;
+    /* z-index: 5; */
   }
 
   /* Header */
@@ -497,18 +497,10 @@ header {
     background: #fff;
     border-bottom-left-radius: 100px;
     padding: 0;
-  }
-
-  .header-bg {
-    background-image: url(./images/Headerbg@2x.png);
+     background-image: url(./images/Headerbg@2x.png);
     background-color: #fff;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    position: absolute;
-    top: 0;
-    left: 2.5%;
-    height: 721px;
-    width: 97.5%;
   }
 
   /* Font styles for big screen */
@@ -612,6 +604,9 @@ header {
     gap: 52px;
     height: 846px;
     top: 70%;
+    background-image: url(./images/contact-form-bg@2x.png);
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   .form-div {
@@ -634,15 +629,6 @@ header {
     border: 1px solid #cfd8dc;
     border-radius: 2px;
     padding: 15px 38px 15px 16px;
-  }
-
-  .contact-form-bg {
-    background-image: url(./images/contact-form-bg@2x.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    left: 2.5%;
-    height: 95%;
-    width: 95%;
   }
 
   .submit-btn {
