@@ -468,12 +468,9 @@ header {
     display: none;
   }
   .show-menu {
-    display: none;
-    transition: transform .5s ease-in;
     transform: translateX(-100%);
   }
   .mobile-menu{
-    display: block;
     z-index: 1;
     position: absolute;
     left: 0px;
@@ -485,8 +482,7 @@ header {
     background-image: url(./images/overlay.png);
     backdrop-filter: blur(7px);
     mix-blend-mode: multiply;
-    /* transition: transform .5s ease-in-out;
-    transform: translateX(-100%); */
+    transition: all .5s ease-in;
   }
   .mobile-menu img {
     position: relative;
