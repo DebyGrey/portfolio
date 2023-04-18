@@ -7,14 +7,12 @@ function initMenu() {
   const links = document.querySelectorAll('.menu-item a');
   // get the mobile menu container element
   const mobileMenu = document.querySelector('.mobile-menu');
-  // Kill the nav menu
-  function destroyNavMenu() {
-    mobileMenu.style.display = 'none';
-  }
+
   // toggle visibility function for nav menu
   function toggleNavMenu() {
     mobileMenu.classList.toggle('show-menu');
   }
+
   // open mobile nav container
   if (hamburger) {
     hamburger.addEventListener('click', toggleNavMenu);
@@ -34,8 +32,8 @@ function initMenu() {
         const href = link.getAttribute('href');
         // use the href attribute to find the target element on the page
         const target = document.querySelector(href);
-        // destroy nav menu. Alternatively - toggleNavMenu()
-        destroyNavMenu();
+        // toggle nav menu to close
+        toggleNavMenu();
         // smoothly scroll to the target location
         target.scrollIntoView({
           behavior: 'smooth',
