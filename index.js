@@ -6,6 +6,11 @@ function initMenu() {
     hamburger.addEventListener('click', () => {
       mobileMenu.classList.toggle('show-menu');
     });
+  } 
+  if (closeBtn) {
+    closeBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('show-menu');
+    });
   }
 }
 
