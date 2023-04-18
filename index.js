@@ -4,10 +4,14 @@ function initMenu() {
   // get the close-btn element
   const closeBtn = document.querySelector('#close-hamburger');
   // get the menu-item elements
-  const menuItems = document.querySelectorAll('.menu-item');
+  const links = document.querySelectorAll('.menu-item a');
   // get the mobile menu container element
   const mobileMenu = document.querySelector('.mobile-menu');
-  // toggle visibility function
+  //Kill the nav menu
+   function destroyNavMenu() {
+     mobileMenu.style.display='none';
+   }
+  // toggle visibility function for nav menu
   function toggleNavMenu() {
     mobileMenu.classList.toggle('show-menu');
   }
@@ -19,19 +23,24 @@ function initMenu() {
   if (closeBtn) {
     closeBtn.addEventListener('click', toggleNavMenu);
   }
-  // navigate to the actual links on the menu item(s)
-  if (menuItems) {
-    document.querySelectorAll('.menuItems').forEach((item) => {
-      item.addEventListener('click', (event) => {
-        // check if the clicked element is a link
-        if (event.target.tagName === 'a') {
-          // prevent the default link behavior
-          event.preventDefault();
-          // get the link href
-          const href = event.target.getAttribute('href');
-          // navigate to the link
-          window.location.href = href;
-        }
+  // navigate to the actual links on the menu item(s) - li a
+  if (links) {
+    console.log(links);
+    links.forEach((link) => {
+      // add event listener to every link  - li a
+      link.addEventListener('click', (event) => {
+        // prevent the default link behavior
+        event.preventDefault();
+        // get the href attribute of each link - li a
+        const href = link.getAttribute("href");
+        // use the href attribute to find the target element on the page
+        const target = document.querySelector(href);
+        // destroy nav menu
+        destroyNavMenu(); //if you want the transition while it leaves the screen, you can use the toggleNavMenu() instead
+        // smoothly scroll to the target location
+        target.scrollIntoView({
+          behavior: "smooth",
+        });
       });
     });
   }
