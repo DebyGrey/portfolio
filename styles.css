@@ -467,33 +467,37 @@ header {
   nav {
     display: none;
   }
+
   .show-menu {
     transform: translateX(-100%);
   }
-  .mobile-menu{
+
+  .mobile-menu {
     z-index: 1;
     position: absolute;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    bottom: 0px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
     width: 100%;
     height: 100vh;
     background-image: url(./images/overlay.png);
     backdrop-filter: blur(7px);
     mix-blend-mode: multiply;
-    transition: all .5s ease-in;
+    transition: all 0.5s ease-in;
   }
+
   .mobile-menu img {
     position: relative;
     left: 80%;
     top: 5%;
   }
+
   .mobile-menu a {
     text-decoration: none;
   }
+
   .mobile-menu ul {
-    padding: 0px;
     gap: 24px;
     position: absolute;
     width: 351px;
@@ -501,9 +505,8 @@ header {
     left: 12px;
     top: 80px;
     list-style-type: none;
-    padding: 16px;
+    padding: 16px 16px;
   }
- 
 }
 
 /* Media Query for Desktop Sceen */
