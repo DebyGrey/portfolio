@@ -40,9 +40,6 @@
 
 <details>
   <summary>HTML5, CSS3 & Javascript</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
 </details>
 
 <!-- Features -->
