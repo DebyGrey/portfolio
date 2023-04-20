@@ -823,5 +823,58 @@ body#popup-blur.active {
   .mobile-menu {
     display: none;
   }
-
+  
+  /* Desktop version Pop up style */
+  .overlay-preview {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #f7f7f9;
+    backdrop-filter: blur(5px);
+    mix-blend-mode: multiply;
+    pointer-events: none;
+    transition: 200ms ease-in-out;
+  }
+  .overlay-preview.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+  .preview .right-block {
+    display: grid;
+    grid-template-columns: 68% 32%;
+    grid-gap: 10px;
+    padding: 0;
+    margin: 31px 0px 0px 0px;
+  }
+   .preview {
+    padding: 24px 24px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    gap: 28px;
+    width: 70%;
+    height: 95%;
+    background: #ffffff;
+    border: 1px solid #ebecf0;
+    translate: (-50%, -50%);
+    box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+  }
+  .preview .portfolio-snapshot {
+    object-fit: cover;
+    height: 55%;
+    margin: 0;
+  }
+  .divider {
+    width: 298px;
+  }
+  .preview .right-block-grid {
+    gap: 24px;
+  }
+  .preview .submit-btn img {
+    width: 20px;
+    height: 20px;
+  }
 }
