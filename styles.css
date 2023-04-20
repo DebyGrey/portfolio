@@ -15,6 +15,7 @@ body {
   height: 100vh;
   margin: 0;
 }
+
 /* counter image */
 .counter-img {
   background-image: url(./images/counter.png);
@@ -22,6 +23,7 @@ body {
   height: 8px;
   margin-top: 5px;
 }
+
 /* Button style */
 
 /* Enabled button */
@@ -85,6 +87,7 @@ body {
 .primary-text {
   width: 95%;
 }
+
 .primary-text-100 {
   width: 100%;
   padding: 0;
@@ -310,6 +313,7 @@ header {
   flex-direction: column;
   gap: 88px;
 }
+
 body#popup-blur.active {
   filter: blur(20px);
 }
@@ -362,6 +366,7 @@ body#popup-blur.active {
   text-decoration: none;
   list-style-type: none;
 }
+
 .tag-btn {
   padding: 4px 12px;
   height: 24px;
@@ -486,6 +491,7 @@ body#popup-blur.active {
   nav {
     display: none;
   }
+
   /* Mobile menu navigation style */
   .show-menu {
     transform: translateX(-100%);
@@ -541,51 +547,60 @@ body#popup-blur.active {
     pointer-events: none;
     transition: 200ms ease-in-out;
   }
+
   .overlay-preview.active {
     opacity: 1;
     pointer-events: all;
   }
+
   .preview .right-block {
     display: flex;
     flex-direction: column;
     gap: 20px;
     justify-content: flex-start;
   }
+
   .preview {
     z-index: 10;
-    padding: 16px;
+    padding: 24px;
     position: fixed;
     width: 90%;
     left: 50%;
     top: 50%;
-    background: #ffffff;
+    background: #fff;
     border: 1px solid #dfe1e6;
     border-radius: 16px;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(0);
     transition: 200ms ease-in-out;
-    /* scale(0) */
   }
+
   .preview.active {
     transform: translate(-50%, -50%) scale(1);
   }
+
   /* preview title */
   .preview-title {
     justify-content: space-between;
   }
+
   .preview-title img {
     object-fit: contain;
   }
+
   .work-preview .preview img:hover {
     transform: rotate(90deg);
   }
+
   .preview .submit-btn {
-    width: fit-content;
+    margin: 0;
   }
+
   .divider {
     width: 303px;
     top: calc(50% - 0px / 2 - 0.5px);
     border: 1px solid #ebecf0;
   }
+
   .blur {
     filter: blur(10px);
     background: #c1c7d0;
@@ -656,6 +671,7 @@ body#popup-blur.active {
     line-height: 52px;
     letter-spacing: 0.37px;
   }
+
   .big-screen-text-40-LH-52 {
     font-weight: 700;
     font-size: 40px;
@@ -685,6 +701,7 @@ body#popup-blur.active {
     font-size: 16px;
     line-height: 24px;
   }
+
   .big-screen-text-16-LH-30 {
     font-weight: 400;
     font-size: 16px;
@@ -785,17 +802,6 @@ body#popup-blur.active {
     margin: auto;
   }
 
-  /* Animations and transitions for desktop */
-
-  /* Snapshoot Portfolio */
-  .portfolio-snapshot {
-    /* transition: all 0.5s ease-in-out; */
-  }
-
-  .portfolio-snapshot:hover {
-    /* transform: scale(1.1); */
-  }
-
   .contact-form-section article p {
     transition: all 0.5s ease-in-out;
   }
@@ -823,7 +829,7 @@ body#popup-blur.active {
   .mobile-menu {
     display: none;
   }
-  
+
   /* Desktop version Pop up style */
   .overlay-preview {
     position: fixed;
@@ -838,43 +844,49 @@ body#popup-blur.active {
     pointer-events: none;
     transition: 200ms ease-in-out;
   }
+
   .overlay-preview.active {
     opacity: 1;
     pointer-events: all;
   }
+
   .preview .right-block {
     display: grid;
     grid-template-columns: 68% 32%;
     grid-gap: 10px;
     padding: 0;
-    margin: 31px 0px 0px 0px;
+    margin: 31px 0 0 0;
   }
-   .preview {
+
+  .preview {
     padding: 24px 24px;
     position: fixed;
     top: 50%;
     left: 50%;
-    gap: 28px;
     width: 70%;
-    height: 95%;
-    background: #ffffff;
+    height: 96%;
+    background: #fff;
     border: 1px solid #ebecf0;
-    translate: (-50%, -50%);
-    box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+    transform: translate(-50%, -50%);
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   }
-  .preview .portfolio-snapshot {
+
+  .portfolio-snapshot-desktop {
     object-fit: cover;
-    height: 55%;
+    height: 28rem;
     margin: 0;
   }
+
   .divider {
     width: 298px;
   }
-  .preview .right-block-grid {
-    gap: 24px;
-  }
+
   .preview .submit-btn img {
     width: 20px;
     height: 20px;
+  }
+
+  .project-action-btn.flex-row {
+    width: fit-content;
   }
 }
