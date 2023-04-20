@@ -867,7 +867,7 @@ body#popup-blur.active {
     height: 96%;
     background: #fff;
     border: 1px solid #ebecf0;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(0);
     box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   }
 
