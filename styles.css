@@ -852,7 +852,7 @@ body#popup-blur.active {
 
   .preview .right-block {
     display: grid;
-    grid-template-columns: 68% 32%;
+    grid-template-columns: 2fr 1fr;
     grid-gap: 10px;
     padding: 0;
     margin: 31px 0 0 0;
@@ -869,11 +869,13 @@ body#popup-blur.active {
     border: 1px solid #ebecf0;
     transform: translate(-50%, -50%) scale(0);
     box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+    overflow: auto;
+    max-height: 715px;
   }
 
   .portfolio-snapshot-desktop {
     object-fit: cover;
-    height: 28rem;
+    height: 26rem;
     margin: 0;
   }
 
