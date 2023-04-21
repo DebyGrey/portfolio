@@ -24,7 +24,7 @@
           <a class="text-32-b color-white" href="#about-myself">About</a>
         </li>
         <li class="menu-item">
-          <a class="text-32-b color-white" href="#contact-me">Contact</a>
+          <a class="text-32-b color-white" href="#contact-form">Contact</a>
         </li>
       </ul>
     </div>
@@ -179,7 +179,7 @@
         </section>
 
         <!-- Contact form -->
-        <section id="contact-me" class="contact-form-section flex-column">
+        <section id="contact-form" class="contact-form-section flex-column">
           <article class="flex-column">
             <h3 class="text-40 color-white text-align-center">Contact me</h3>
             <p class="text-20-LH-28 color-B50 text-align-center">
@@ -197,7 +197,7 @@
               <input
                 class="text-input color-N800 text-17-LH-20"
                 name="username"
-                id="username"
+                id="name"
                 type="text"
                 maxlength="30"
                 placeholder="Lorem Ipsum"
@@ -205,7 +205,7 @@
               />
               <input
                 class="email-input color-N800 text-17-LH-20"
-                name="Email"
+                name="email"
                 id="email"
                 type="email"
                 maxlength="30"
@@ -222,7 +222,8 @@
                 rows="5"
                 required
               ></textarea>
-              <button class="submit-btn text-17" type="submit">
+              <p class="success-message"></p>
+              <button class="submit-btn text-17" type="submit" id="submit-contact-form">
                 Get in touch
               </button>
             </form>
