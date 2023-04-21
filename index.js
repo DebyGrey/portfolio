@@ -305,7 +305,6 @@ function showModal(project) {
   stackUl.append(...stackUlListItems);
 
   // get the list of stack
-  // const tagKeys = Object.keys(project.tags);
   const tagValues = Object.values(project.tags);
 
   const tagListItems = tagValues.map(
@@ -374,3 +373,49 @@ if (submitBtns) {
     });
   });
 }
+// validate contact form
+// Get the form and form fields
+const submitContactForm = document.querySelector('#submit-contact-form');
+const contactForm = document.querySelector('form');
+const nameField = document.querySelector('#name');
+const emailField = document.querySelector('#email');
+const messageField = document.querySelector('#message');
+const successMessage = document.querySelector('.success-message');
+
+// Add a submit event listener to the form
+submitContactForm.addEventListener('click', (event) => {
+  // Prevent the form from submitting
+  event.preventDefault();
+
+  // Validate the name field
+  if (nameField.value === '') {
+    successMessage.innerHTML = 'Your form was not sent! <br /> Please enter your name';
+    nameField.focus();
+    return;
+  }
+
+  // Validate the email field
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(emailField.value)) {
+    successMessage.innerHTML = 'Your form was not sent! <br /> please enter a valid email address';
+    emailField.focus();
+    return;
+  }
+  if (emailField.value !== emailField.value.toLowerCase()) {
+    successMessage.innerHTML = 'Your form was not sent! <br/> Please enter your email in lowercase';
+    emailField.focus();
+    return;
+  }
+
+  // Validate the message field
+  if (messageField.value === '') {
+    successMessage.innerHTML = 'Your form was not sent! <br /> Please enter a message';
+    messageField.focus();
+    return;
+  }
+
+  // If all fields are valid, submit the form
+  contactForm.submit();
+  // reload page
+  contactForm.reset();
+});

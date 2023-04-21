@@ -59,6 +59,11 @@ body {
   border: 1px solid #c1c7d0;
 }
 
+/* success message */
+.success-message {
+  color: red;
+}
+
 /* flex row */
 .flex-row {
   display: flex;
