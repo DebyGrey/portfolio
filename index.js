@@ -419,3 +419,15 @@ submitContactForm.addEventListener('click', (event) => {
   // reload page
   contactForm.reset();
 });
+window.addEventListener('load', () => {
+  const storedFormData = localStorage.getItem('formData');
+  if (storedFormData) {
+    // Parse stored form data into an object
+    const parsedFormData = JSON.parse(storedFormData);
+
+    // Populate form fields with stored data
+    nameField.value = parsedFormData.name;
+    emailField.value = parsedFormData.email;
+    messageField.value = parsedFormData.message;
+  }
+});
