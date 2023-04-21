@@ -416,6 +416,5 @@ submitContactForm.addEventListener('click', (event) => {
 
   // If all fields are valid, submit the form
   contactForm.submit();
-  // reload page
-  contactForm.reset();
+  
 });
