@@ -418,6 +418,4 @@ submitContactForm.addEventListener('click', (event) => {
   contactForm.submit();
   // reload page
   contactForm.reset();
-// reload page
-  contactForm.reset();
 });
