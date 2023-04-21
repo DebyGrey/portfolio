@@ -373,20 +373,21 @@ if (submitBtns) {
     });
   });
 }
+
 // validate contact form
 // Get the form and form fields
-const submitContactForm = document.querySelector('#submit-contact-form');
-const contactForm = document.querySelector('form');
+const contactForm = document.querySelector('#form-contact');
 const nameField = document.querySelector('#name');
 const emailField = document.querySelector('#email');
 const messageField = document.querySelector('#message');
 const successMessage = document.querySelector('.success-message');
 
-// Add a submit event listener to the form
-submitContactForm.addEventListener('click', (event) => {
-  // Prevent the form from submitting
+// Add event listener to form submit event
+contactForm.addEventListener('submit', (event) => {
+  // prevent default form submission behavior
   event.preventDefault();
 
+  // Validate form data
   // Validate the name field
   if (nameField.value === '') {
     successMessage.innerHTML = 'Your form was not sent! <br /> Please enter your name';
@@ -411,13 +412,23 @@ submitContactForm.addEventListener('click', (event) => {
   if (messageField.value === '') {
     successMessage.innerHTML = 'Your form was not sent! <br /> Please enter a message';
     messageField.focus();
-    return;
   }
-
-  // If all fields are valid, submit the form
   contactForm.submit();
 });
+// Add event listener to form input fields' change event
+contactForm.querySelectorAll('input,textarea').forEach((input) => {
+  input.addEventListener('change', () => {
+    // Store form data in object
+    const formData = {
+      name: contactForm.name.value,
+      email: contactForm.email.value,
+      message: contactForm.message.value,
+    };
+    localStorage.setItem('formData', JSON.stringify(formData));
+  });
+});
 
+// Check if form data exists in local storage on page load
 window.addEventListener('load', () => {
   const storedFormData = localStorage.getItem('formData');
   if (storedFormData) {
