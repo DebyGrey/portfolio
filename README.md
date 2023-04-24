@@ -84,7 +84,7 @@ git clone https://github.com/DebyGrey/portfolio.git
 
 To install this project run this into your terminal:
 
-+ git clone https://github.com/husush23/portfolio.git
++ git clone https://github.com/DebyGrey/portfolio.git
 
 
 ### Usage
